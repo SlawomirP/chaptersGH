@@ -1,8 +1,11 @@
 public class SimpleStartup {
 
+    //2 KROK TO STWORZENIE KLASY KTOREJ OBIEKTU BEDZIEMY UZYWAC W GRZE
+
     private int [] locations;
     private int numOfHits = 0;
     public void setLocationCells(int[] locations) {
+        this.locations = locations;
     }
 
     public String checkYourself(int userGuess) {

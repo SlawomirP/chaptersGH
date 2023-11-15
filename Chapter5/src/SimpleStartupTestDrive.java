@@ -1,6 +1,9 @@
 public class SimpleStartupTestDrive {
     public static void main(String[] args) {
 
+        // 1 KROK - TO STWORZENIE TESTU SPRAWDZAJACEGO METODE SPRAWDZAJACA TRAFIENIA, TRZEBA ZROBIC OBIEKT KLASY
+        // BO W NIM BEDZIE TABLICA I DLA NIEGO JEST METODA SPRAWDZAJĄCA
+
         SimpleStartup simpleStartup = new SimpleStartup();
 
         int [] locations = {2,3,4}; //przykladowy statek do zestrzelenia
