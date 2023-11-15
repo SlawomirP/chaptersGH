@@ -10,7 +10,7 @@ public class SimpleStartupGame {
 
         SimpleStartup theStartup = new SimpleStartup(); // obikt klasy startupa
 
-        int randomNum = (int) (Math.random() * 5); // wylosowanie liczy od 0 - 0.99
+        int randomNum = (int) (Math.random() * 5); // wylosowanie liczy od 0 - 0.99 - rzutowanie na int
 
         int [] locations = {randomNum, randomNum + 1, randomNum + 2}; // stworzenie tablicy
 
