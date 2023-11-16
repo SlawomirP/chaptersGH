@@ -4,7 +4,7 @@ public class SimpleStartupGame {
 
     public static void main(String[] args) {
 
-        int numOfGuesses= 0; // licznik prób
+        int numOfGuesses = 0; // licznik prób
 
         GameHelper helper = new GameHelper(); // obiekt do pobierania danych od uzytkownika
 
@@ -12,13 +12,13 @@ public class SimpleStartupGame {
 
         int randomNum = (int) (Math.random() * 5); // wylosowanie liczy od 0 - 0.99 - rzutowanie na int
 
-        int [] locations = {randomNum, randomNum + 1, randomNum + 2}; // stworzenie tablicy
+        int[] locations = {randomNum, randomNum + 1, randomNum + 2}; // stworzenie tablicy
 
         theStartup.setLocationCells(locations);    // przypisanie jej do obiektu
 
         boolean isAlive = true; // warunek do petli, sprawdzenie stanu statku
 
-        while(isAlive){
+        while (isAlive) {
 
             int guess = helper.getUserInput("enter a number"); // pobranie wart od usera
 
@@ -31,7 +31,6 @@ public class SimpleStartupGame {
                 System.out.println("You took " + numOfGuesses + " guesses"); // podsumowanie dla usera
             }
         }
-
 
     }
 }
