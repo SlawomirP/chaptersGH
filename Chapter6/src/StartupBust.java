@@ -42,6 +42,7 @@ public class StartupBust {
         }
     }
 
+
     //start method
     //as long as isEmpty is false program asks user for his guess
     //checkUserGuess <- checks answers
