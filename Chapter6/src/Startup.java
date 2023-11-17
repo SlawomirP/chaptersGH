@@ -2,6 +2,8 @@ import java.util.ArrayList;
 
 public class Startup {
 
+    private String name;
+
     private ArrayList<String> locationCells;
 
     public void setLocationCells(ArrayList<String> locationCells) {
@@ -24,5 +26,8 @@ public class Startup {
             result = "hit";                     // jezeli nie tzn ze tylko trafiony bo cos jeszcze zostalo na liscie
         }
         return result;
+    }
+
+    public void setName(String poniez) {
     }
 }
