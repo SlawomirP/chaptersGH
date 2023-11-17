@@ -1,9 +1,6 @@
 package BonusLists;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class ListExample {
     public static void main(String[] args) {
@@ -80,6 +77,68 @@ public class ListExample {
 //        List<Integer> list2 = Arrays.asList(ints);
 
         List<Integer> lst = List.of(5,10,15); // List.of(...)
+
+        ////////////////////////////////////////
+        List<String> table = new ArrayList<>();
+        table.add("qwe");
+        table.add("asd");
+        table.add("zxc");
+        table.add("qaz");
+        table.add("wsx");
+        table.forEach(System.out::println);
+        System.out.println("-----------");
+
+        table.remove("wsx");
+        table.remove(0);
+        table.forEach(System.out::println);
+
+        System.out.println("------------------");
+        List<String> t2 = new ArrayList<>();
+        t2.add("123");
+        t2.add("456");
+        t2.add("qwe");
+        t2.add("wsx");
+        t2.forEach(System.out::println);
+
+
+        System.out.println("+++++++++++");
+        table.addAll(t2);
+        table.forEach(System.out::println);
+
+        System.out.println("+++++++++++");
+        table.remove(4);
+        table.forEach(System.out::println);
+
+        System.out.println(table.contains("123"));
+        System.out.println(table.contains("abc"));
+
+        System.out.println(table.isEmpty());
+        System.out.println(table.size());
+
+        Collections.sort(table);
+        table.forEach(System.out::println);
+
+        System.out.println("OOOOOOOOOOOOOOOOOOOOOOOOOOOO");
+        t2.clear();
+        t2.add("1");
+        t2.add("2");
+        t2.add("3");
+        t2.add("4");
+        t2.forEach(System.out::println);
+        System.out.println("index 3 is: " + t2.indexOf("3"));
+        System.out.println("object at index 0 is: " + t2.get(0));
+
+        String [] myList = new String[2];
+        myList[0] = "who";
+
+
+
+
+
+
+
+
+
 
 
     }
