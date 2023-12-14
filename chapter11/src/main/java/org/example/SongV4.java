@@ -1,11 +1,11 @@
 package org.example;
 
-public class SongV3 implements Comparable<SongV3> {
+public class SongV4 implements Comparable<SongV4> {
     private String title;
     private String artist;
     private int bpm;
 
-    public SongV3(String title, String name, int bpm) {
+    public SongV4(String title, String name, int bpm) {
         this.title = title;
         this.artist = name;
         this.bpm = bpm;
@@ -29,7 +29,7 @@ public class SongV3 implements Comparable<SongV3> {
     }
 
     @Override
-    public int compareTo(SongV3 o) {
+    public int compareTo(SongV4 o) {
         return this.title.compareTo(o.getTitle());
     }
 }
