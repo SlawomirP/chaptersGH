@@ -1,6 +1,7 @@
 package BonusGeneric;
 
-public class Cointainer <T> { // tworzc obiekt tej klasy musimy zamiast T (skrot od type)okrelic typ OBIEKTOWY - nie prymityw !!!
+public class Cointainer <T> { // tworzac obiekt tej klasy musimy zamiast T
+                         // (skrot od type)okrelic typ OBIEKTOWY - nie prymityw !!!
 
     T [] array;
 
