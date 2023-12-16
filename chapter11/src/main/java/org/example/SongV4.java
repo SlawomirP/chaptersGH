@@ -11,6 +11,17 @@ public class SongV4 implements Comparable<SongV4> {
         this.bpm = bpm;
     }
 
+    @Override
+    public boolean equals(Object song) { // podany obiekt
+        SongV4 other = (SongV4) song; // rzutujemy na song
+        return title.equals(other.getTitle()); // kryterium to tytuł
+    }
+
+    @Override
+    public int hashCode() { // zwracamy dla tytułu
+        return title.hashCode();
+    }
+
     public String getTitle() {
         return title;
     }
@@ -25,7 +36,7 @@ public class SongV4 implements Comparable<SongV4> {
 
     @Override
     public String toString() {
-        return title;
+        return title + " " + bpm;
     }
 
     @Override
