@@ -2,7 +2,7 @@ package test2;
 
 import java.util.ArrayList;
 
-public abstract class Miejsce<T> {
+public abstract class Miejsce<T extends Przedmiot> {
 
     private ArrayList<T> listaElementow = new ArrayList<>();
 
