@@ -34,7 +34,8 @@ public class SimpleAnimation {
 
     class MyDrawPanel2 extends JPanel {
         public void paintComponent(Graphics g) {
-            g.fillRect(0,0, this.getWidth(), this.getHeight()); // to spowoduje wypelnienie tła czarnym kolorem
+            g.setColor(Color.white);// mozna ustawic kolor tła np teraz biały
+            g.fillRect(0,0, this.getWidth(), this.getHeight()); // to spowoduje wypelnienie tła białym kolorem
                                                 // tak że za kazdym razem bedzie czarne tlo i kolko
                                                 //bez tego po kolku zostanie ścieżka - jego poprzednia pozycja
             g.setColor(Color.green);
