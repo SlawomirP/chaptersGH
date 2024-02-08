@@ -6,9 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="chapter7" />
         <module name="chapter11" />
         <module name="Chaoter8" />
+        <module name="chapter7" />
+        <module name="chapt16" />
         <module name="Chapter12" />
         <module name="chapter14" />
         <module name="Chapter13" />
