@@ -6,7 +6,7 @@ import java.io.IOException;
 public class SamplaSavingFile {
     public static void main(String[] args) {
 
-        try{
+        try {
 
             FileWriter obiektZapisujacy = new FileWriter("test.txt");
 
@@ -14,7 +14,7 @@ public class SamplaSavingFile {
 
             obiektZapisujacy.close();
 
-        }catch(Exception e){
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
